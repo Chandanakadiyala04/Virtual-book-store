@@ -1,0 +1,13 @@
+com\bookstore\controller\AuthControllerTest.class
+com\bookstore\model\PasswordResetTokenModelTest.class
+com\bookstore\dto\DTOTest.class
+com\bookstore\model\OrderModelTest.class
+com\bookstore\controller\BookControllerTest.class
+com\bookstore\model\UserModelTest.class
+com\bookstore\model\ReviewModelTest.class
+com\bookstore\security\UserDetailsImplTest.class
+com\bookstore\model\CommunityPostModelTest.class
+com\bookstore\controller\ReviewControllerTest.class
+com\bookstore\model\BookModelTest.class
+com\bookstore\listeners\TestListener.class
+com\bookstore\selenium\SeleniumTest.class
