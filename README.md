@@ -1,97 +1,59 @@
-# 🍃 LeafyBooks (Virtual Book Store)
+# Frontend
 
-LeafyBooks is a modern, full-stack Virtual Book Store web application. It provides a platform for users to browse, buy, and sell books. It features a robust authentication system (including Google OAuth), a shopping cart, a checkout process, and a community discussion forum.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
 
-## 🌟 Key Features
+## Development server
 
-*   **Authentication & Authorization:** Secure JWT-based login, registration, and password reset via email.
-*   **Google OAuth:** Seamless sign-in using Google accounts.
-*   **Email Notifications:** Automated welcome emails and password reset links.
-*   **Book Inventory:** Browse books by category, view details, and manage inventory (Admin/Seller).
-*   **Shopping Cart & Orders:** Add items to cart and process orders securely.
-*   **Community Forum:** Engage with other readers by posting and reading community discussions.
-*   **Responsive UI:** A clean, airy, and modern Angular interface that works on both desktop and mobile.
+To start a local development server, run:
 
----
-
-## 🛠️ Technologies Used
-
-### Backend (Spring Boot)
-*   **Java 17**
-*   **Spring Boot (3.2.5)** - Core framework for the REST API.
-*   **Spring Security & JWT** - For securing endpoints and managing user sessions.
-*   **Spring Data MongoDB** - For database interactions.
-*   **MongoDB** - NoSQL database for storing users, books, orders, etc.
-*   **Spring Boot Mail** - For sending automated emails (SMTP).
-*   **Google API Client** - For verifying Google OAuth tokens.
-*   **Lombok** - To reduce boilerplate code (Getters, Setters, Constructors).
-
-### Frontend (Angular)
-*   **Angular (v17.3.x)** - Component-based frontend framework.
-*   **TypeScript** - Strongly typed JavaScript.
-*   **RxJS** - For reactive programming and handling asynchronous data streams.
-*   **Bootstrap 5** - For responsive layouts and UI components.
-*   **FontAwesome** - For iconography.
-*   **ngx-toastr** - For elegant, non-blocking toast notifications.
-
----
-
-## 🚀 Getting Started
-
-Follow these instructions to set up the project locally on your machine.
-
-### Prerequisites
-
-You need to have the following installed:
-*   **Node.js** (v18+) and **npm**
-*   **Angular CLI** (`npm install -g @angular/cli`)
-*   **Java Development Kit (JDK) 17**
-*   **Maven**
-### 1. Database Setup (MongoDB)
-1. The application uses a MongoDB Atlas cluster.
-2. The connection string is already configured in `backend/src/main/resources/application.properties`.
-3. Ensure your IP address is whitelisted in the MongoDB Atlas dashboard.
-
-### 2. Backend Setup
-Navigate to the `backend` directory and run the Spring Boot application:
 ```bash
-cd backend
-mvn clean install
-mvn spring-boot:run
+ng serve
 ```
-*The backend server will start on `http://localhost:8080`.*
 
-### 3. Frontend Setup
-Open a new terminal, navigate to the `frontend` directory, install dependencies, and start the Angular server:
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
 ```bash
-cd frontend
-npm install
-npm start
+ng generate component component-name
 ```
-*The frontend application will be available at `http://localhost:4200`.*
 
----
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-## 📦 Dependencies & Packages Installed
+```bash
+ng generate --help
+```
 
-**Backend (`pom.xml`):**
-*   `spring-boot-starter-web`
-*   `spring-boot-starter-data-mongodb`
-*   `spring-boot-starter-security`
-*   `spring-boot-starter-validation`
-*   `spring-boot-starter-mail`
-*   `jjwt-api`, `jjwt-impl`, `jjwt-jackson` (v0.11.5)
-*   `google-api-client` (v2.2.0)
+## Building
 
-**Frontend (`package.json`):**
-*   `@angular/core`, `@angular/common`, `@angular/forms`, `@angular/router`
-*   `bootstrap`
-*   `ngx-toastr`
-*   `@auth0/angular-jwt` (for decoding tokens on the client)
+To build the project run:
 
----
+```bash
+ng build
+```
 
-## 🛡️ Default Credentials
-Upon the first startup, the backend automatically creates a default administrator account:
-*   **Email/Username:** `admin`
-*   **Password:** `admin123`
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

@@ -1,0 +1,225 @@
+.home-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  background: white;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 1rem;
+}
+
+.hero-animation {
+  width: 100%;
+  max-width: 800px;
+  height: 280px; /* Precise crop height to hide "Aerolab" text */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-animation img {
+  width: auto;
+  height: 600px; /* Oversize height to allow cropping */
+  object-fit: cover;
+  margin-top: -20px; /* Shift up to hide bottom text */
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+.main-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #2d3436;
+  margin: 0.5rem 0;
+}
+
+.main-title span {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  color: #636e72;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Category Navigation */
+.category-header {
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 70px;
+  background: rgba(248, 251, 253, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.category-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  scrollbar-width: none;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-scroll button {
+  background: white;
+  border: 1px solid #f1f2f6;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  color: #636e72;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.category-scroll button.active {
+  background: #00b894;
+  color: white;
+  border-color: #00b894;
+  box-shadow: 0 4px 15px rgba(0, 184, 148, 0.2);
+}
+
+/* Book Grid System */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 Columns for Desktop */
+  gap: 2rem;
+  width: 100%;
+}
+
+.book-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid #f1f2f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.book-image {
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 1.2rem;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  color: #2d3436;
+  margin: 0.5rem 0;
+  height: 2.8em;
+  overflow: hidden;
+}
+
+.author {
+  font-size: 0.85rem;
+  color: #636e72;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+/* Mobile Overrides (below 1024px) */
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: block !important;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr) !important; /* Force 3 Columns for Mobile */
+    gap: 12px;
+  }
+
+  .home-container {
+    padding: 0 12px 2rem;
+  }
+
+  .hero {
+    padding: 1.5rem 10px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-animation {
+    height: 180px;
+  }
+
+  .hero-animation img {
+    height: 400px;
+    margin-top: -10px;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .book-image {
+    height: 160px;
+  }
+
+  .book-info {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .book-info h3 {
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+    line-height: 1.2;
+  }
+
+  .author {
+    display: none;
+  }
+
+  .category-scroll button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
