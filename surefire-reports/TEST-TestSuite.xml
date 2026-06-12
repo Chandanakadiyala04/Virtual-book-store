@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="95.025" tests="126" errors="0" skipped="58" failures="2">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:/Users/2485062/.cache/selenium/chromedriver/win64/148.0.7680.165/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\test-classes;C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\classes;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\2485062\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\2485062\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\2485062\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\2485062\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\2485062\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\2485062\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\2485062\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\2485062\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\2485062\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\2485062\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\2485062\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\2485062\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\2485062\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\2485062\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\2485062\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\2485062\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\2485062\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\2485062\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\2485062\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\2485062\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\2485062\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\2485062\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\2485062\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\2485062\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\2485062\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\2485062\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\2485062\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\2485062\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\2485062\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\2485062\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\2485062\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\2485062\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\2485062\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\2485062\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\2485062\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\2485062\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\2485062\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\2485062\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\2485062\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\2485062\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\2485062\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\2485062\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2485062\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\2485062\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\2485062\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\2485062\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\2485062\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\2485062\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\2485062\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-testng\0.5.2\mockito-testng-0.5.2.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;C:\Users\2485062\.m2\repository\com\google\api-client\google-api-client\2.2.0\google-api-client-2.2.0.jar;C:\Users\2485062\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\2485062\.m2\repository\com\google\oauth-client\google-oauth-client\1.34.1\google-oauth-client-1.34.1.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client-gson\1.42.3\google-http-client-gson-1.42.3.jar;C:\Users\2485062\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\2485062\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\2485062\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\2485062\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2485062\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\2485062\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\2485062\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client-apache-v2\1.42.3\google-http-client-apache-v2-1.42.3.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\2485062\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client\1.42.3\google-http-client-1.42.3.jar;C:\Users\2485062\.m2\repository\io\opencensus\opencensus-api\0.31.1\opencensus-api-0.31.1.jar;C:\Users\2485062\.m2\repository\io\grpc\grpc-context\1.27.2\grpc-context-1.27.2.jar;C:\Users\2485062\.m2\repository\io\opencensus\opencensus-contrib-http-util\0.31.1\opencensus-contrib-http-util-0.31.1.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-mail\3.2.5\spring-boot-starter-mail-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;C:\Users\2485062\.m2\repository\org\eclipse\angus\jakarta.mail\2.0.3\jakarta.mail-2.0.3.jar;C:\Users\2485062\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\2485062\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\2485062\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\2485062\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-api\4.14.1\selenium-api-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.14.1\selenium-chrome-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.14.1\selenium-chromium-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-json\4.14.1\selenium-json-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.14.1\selenium-manager-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.14.1\selenium-devtools-v85-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.14.1\selenium-edge-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.14.1\selenium-firefox-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-http\4.14.1\selenium-http-4.14.1.jar;C:\Users\2485062\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.14.1\selenium-ie-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.14.1\selenium-remote-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-api\1.31.0\opentelemetry-api-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-context\1.31.0\opentelemetry-context-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.31.0\opentelemetry-exporter-logging-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.31.0\opentelemetry-sdk-common-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.31.0\opentelemetry-sdk-extension-autoconfigure-spi-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.31.0\opentelemetry-sdk-extension-autoconfigure-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.31.0-alpha\opentelemetry-api-events-1.31.0-alpha.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.31.0\opentelemetry-sdk-trace-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.31.0\opentelemetry-sdk-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.31.0\opentelemetry-sdk-metrics-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.31.0-alpha\opentelemetry-extension-incubator-1.31.0-alpha.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.31.0\opentelemetry-sdk-logs-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-os\4.14.1\selenium-os-4.14.1.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.14.1\selenium-safari-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-support\4.14.1\selenium-support-4.14.1.jar;C:\Users\2485062\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\2485062\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\2485062\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.13\jcl-over-slf4j-2.0.13.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\2485062\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\2485062\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\2485062\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\2485062\AppData\Local\Temp\surefire9648720716195444342\surefirebooter-20260611082524361_3.jar C:\Users\2485062\AppData\Local\Temp\surefire9648720716195444342 2026-06-11T08-25-24_114-jvmRun1 surefire-20260611082524361_1tmp surefire_0-20260611082524361_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\test-classes;C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\classes;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\2485062\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\2485062\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\2485062\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\2485062\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\2485062\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\2485062\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\2485062\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\2485062\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\2485062\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\2485062\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\2485062\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\2485062\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\2485062\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\2485062\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\2485062\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\2485062\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\2485062\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\2485062\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\2485062\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\2485062\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\2485062\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\2485062\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\2485062\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\2485062\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\2485062\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;C:\Users\2485062\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\2485062\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\2485062\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\2485062\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\2485062\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\2485062\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\2485062\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\2485062\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\2485062\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\2485062\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\2485062\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\2485062\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\2485062\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\2485062\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\2485062\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\2485062\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\2485062\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\2485062\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\2485062\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\2485062\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\2485062\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2485062\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\2485062\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\2485062\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\2485062\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\2485062\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\2485062\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\2485062\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\2485062\.m2\repository\org\mockito\mockito-testng\0.5.2\mockito-testng-0.5.2.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;C:\Users\2485062\.m2\repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;C:\Users\2485062\.m2\repository\com\google\api-client\google-api-client\2.2.0\google-api-client-2.2.0.jar;C:\Users\2485062\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\2485062\.m2\repository\com\google\oauth-client\google-oauth-client\1.34.1\google-oauth-client-1.34.1.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client-gson\1.42.3\google-http-client-gson-1.42.3.jar;C:\Users\2485062\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\2485062\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\2485062\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\2485062\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2485062\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\2485062\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\2485062\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client-apache-v2\1.42.3\google-http-client-apache-v2-1.42.3.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\2485062\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\2485062\.m2\repository\com\google\http-client\google-http-client\1.42.3\google-http-client-1.42.3.jar;C:\Users\2485062\.m2\repository\io\opencensus\opencensus-api\0.31.1\opencensus-api-0.31.1.jar;C:\Users\2485062\.m2\repository\io\grpc\grpc-context\1.27.2\grpc-context-1.27.2.jar;C:\Users\2485062\.m2\repository\io\opencensus\opencensus-contrib-http-util\0.31.1\opencensus-contrib-http-util-0.31.1.jar;C:\Users\2485062\.m2\repository\org\springframework\boot\spring-boot-starter-mail\3.2.5\spring-boot-starter-mail-3.2.5.jar;C:\Users\2485062\.m2\repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;C:\Users\2485062\.m2\repository\org\eclipse\angus\jakarta.mail\2.0.3\jakarta.mail-2.0.3.jar;C:\Users\2485062\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\2485062\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\2485062\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\2485062\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-api\4.14.1\selenium-api-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.14.1\selenium-chrome-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.14.1\selenium-chromium-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-json\4.14.1\selenium-json-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.14.1\selenium-manager-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.14.1\selenium-devtools-v85-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.14.1\selenium-edge-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.14.1\selenium-firefox-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-http\4.14.1\selenium-http-4.14.1.jar;C:\Users\2485062\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.14.1\selenium-ie-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.14.1\selenium-remote-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-api\1.31.0\opentelemetry-api-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-context\1.31.0\opentelemetry-context-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.31.0\opentelemetry-exporter-logging-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.31.0\opentelemetry-sdk-common-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.31.0\opentelemetry-sdk-extension-autoconfigure-spi-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.31.0\opentelemetry-sdk-extension-autoconfigure-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.31.0-alpha\opentelemetry-api-events-1.31.0-alpha.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.31.0\opentelemetry-sdk-trace-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.31.0\opentelemetry-sdk-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.31.0\opentelemetry-sdk-metrics-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.31.0-alpha\opentelemetry-extension-incubator-1.31.0-alpha.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.31.0\opentelemetry-sdk-logs-1.31.0.jar;C:\Users\2485062\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-os\4.14.1\selenium-os-4.14.1.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.14.1\selenium-safari-driver-4.14.1.jar;C:\Users\2485062\.m2\repository\org\seleniumhq\selenium\selenium-support\4.14.1\selenium-support-4.14.1.jar;C:\Users\2485062\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\2485062\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\2485062\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.13\jcl-over-slf4j-2.0.13.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\2485062\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\2485062\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\2485062\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\2485062\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\2485062\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\2485062\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\2485062"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-09-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\2485062\AppData\Local\Temp\surefire9648720716195444342\surefirebooter-20260611082524361_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21+35-LTS-2513"/>
+    <property name="user.name" value="2485062"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\2485062\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\2485062\AppData\Local\Temp\"/>
+    <property name="java.version" value="21"/>
+    <property name="user.dir" value="C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="C:\Users\2485062\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="27500"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\2485062\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\2485062\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\2485062\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\apache-maven-3.9.15\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\2485062\AppData\Local\Microsoft\WindowsApps;C:\Users\2485062\AppData\Roaming\npm;C:\Users\2485062\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\2485062\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21+35-LTS-2513"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testBookConstructor" classname="com.bookstore.model.BookModelTest" time="0.016">
+    <system-out><![CDATA[...
+... TestNG 7.9.0 by Cédric Beust (cedric@beust.com)
+...
+
+08:25:28.199 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookstore.controller.BookControllerTest]: BookControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:25:28.950 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookstore.BackendApplication for test class com.bookstore.controller.BookControllerTest
+08:25:29.143 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bookstore.controller.ReviewControllerTest]: ReviewControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:25:29.224 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bookstore.BackendApplication for test class com.bookstore.controller.ReviewControllerTest
+========================================
+========================================
+========================================
+========================================
+TEST GROUP STARTED: Unit Tests
+TEST GROUP STARTED: Selenium Firefox Tests
+TEST GROUP STARTED: Selenium Chrome Tests
+TEST GROUP STARTED: Selenium Edge Tests
+========================================
+TEST GROUP STARTED: Controller Tests
+Start Time: Thu Jun 11 08:25:29 IST 2026
+Start Time: Thu Jun 11 08:25:29 IST 2026
+========================================
+========================================
+Start Time: Thu Jun 11 08:25:29 IST 2026
+========================================
+Start Time: Thu Jun 11 08:25:29 IST 2026
+========================================
+Start Time: Thu Jun 11 08:25:29 IST 2026
+========================================
+========================================
+========================================
+========================================
+Running tests on: CHROME
+Running tests on: EDGE
+Running tests on: FIREFOX
+========================================
+========================================
+========================================
+------------------------------------------
+TEST STARTED : testBookConstructor
+Class        : com.bookstore.model.BookModelTest
+TEST PASSED  : testBookConstructor
+Time Taken   : 14 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultConstructor" classname="com.bookstore.model.BookModelTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testDefaultConstructor
+Class        : com.bookstore.model.BookModelTest
+TEST PASSED  : testDefaultConstructor
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testIsbn" classname="com.bookstore.model.BookModelTest" time="0.004">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testIsbn
+Class        : com.bookstore.model.BookModelTest
+TEST PASSED  : testIsbn
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testSettersAndGetters" classname="com.bookstore.model.BookModelTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSettersAndGetters
+Class        : com.bookstore.model.BookModelTest
+TEST PASSED  : testSettersAndGetters
+Time Taken   : 3 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAddFavorite" classname="com.bookstore.model.UserModelTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAddFavorite
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testAddFavorite
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAddRole" classname="com.bookstore.model.UserModelTest" time="0.01">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAddRole
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testAddRole
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAllArgsConstructor" classname="com.bookstore.model.UserModelTest" time="0.009">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAllArgsConstructor
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testAllArgsConstructor
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleRoles" classname="com.bookstore.model.UserModelTest" time="0.016">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testMultipleRoles
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testMultipleRoles
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testSetRoles" classname="com.bookstore.model.UserModelTest" time="0.012">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSetRoles
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testSetRoles
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testUserFields" classname="com.bookstore.model.UserModelTest" time="0.01">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testUserFields
+Class        : com.bookstore.model.UserModelTest
+TEST PASSED  : testUserFields
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testOrderFields" classname="com.bookstore.model.OrderModelTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testOrderFields
+Class        : com.bookstore.model.OrderModelTest
+TEST PASSED  : testOrderFields
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testOrderItemFields" classname="com.bookstore.model.OrderModelTest" time="0.02">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testOrderItemFields
+Class        : com.bookstore.model.OrderModelTest
+TEST PASSED  : testOrderItemFields
+Time Taken   : 5 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testOrderItems" classname="com.bookstore.model.OrderModelTest" time="0.048">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testOrderItems
+Class        : com.bookstore.model.OrderModelTest
+TEST PASSED  : testOrderItems
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testStatusUpdate" classname="com.bookstore.model.OrderModelTest" time="0.003">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testStatusUpdate
+Class        : com.bookstore.model.OrderModelTest
+TEST PASSED  : testStatusUpdate
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testTotalAmountCalculation" classname="com.bookstore.model.OrderModelTest" time="0.012">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testTotalAmountCalculation
+Class        : com.bookstore.model.OrderModelTest
+TEST PASSED  : testTotalAmountCalculation
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatedAtSetOnConstruction" classname="com.bookstore.model.ReviewModelTest" time="0.005">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCreatedAtSetOnConstruction
+Class        : com.bookstore.model.ReviewModelTest
+TEST PASSED  : testCreatedAtSetOnConstruction
+Time Taken   : 2 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testRatingRange" classname="com.bookstore.model.ReviewModelTest" time="0.005">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testRatingRange
+Class        : com.bookstore.model.ReviewModelTest
+TEST PASSED  : testRatingRange
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testReviewFields" classname="com.bookstore.model.ReviewModelTest" time="0.006">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testReviewFields
+Class        : com.bookstore.model.ReviewModelTest
+TEST PASSED  : testReviewFields
+Time Taken   : 2 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatedAtOnConstruction" classname="com.bookstore.model.CommunityPostModelTest" time="0.011">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCreatedAtOnConstruction
+Class        : com.bookstore.model.CommunityPostModelTest
+TEST PASSED  : testCreatedAtOnConstruction
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testPostFields" classname="com.bookstore.model.CommunityPostModelTest" time="0.021">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testPostFields
+Class        : com.bookstore.model.CommunityPostModelTest
+TEST PASSED  : testPostFields
+Time Taken   : 2 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateTitle" classname="com.bookstore.model.CommunityPostModelTest" time="0.004">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testUpdateTitle
+Class        : com.bookstore.model.CommunityPostModelTest
+TEST PASSED  : testUpdateTitle
+Time Taken   : 1 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testConstructorFields" classname="com.bookstore.model.PasswordResetTokenModelTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testConstructorFields
+Class        : com.bookstore.model.PasswordResetTokenModelTest
+TEST PASSED  : testConstructorFields
+Time Taken   : 2 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testExpiryDateInFuture" classname="com.bookstore.model.PasswordResetTokenModelTest" time="0.004">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testExpiryDateInFuture
+Class        : com.bookstore.model.PasswordResetTokenModelTest
+TEST PASSED  : testExpiryDateInFuture
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testSetUserId" classname="com.bookstore.model.PasswordResetTokenModelTest" time="0.009">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSetUserId
+Class        : com.bookstore.model.PasswordResetTokenModelTest
+TEST PASSED  : testSetUserId
+Time Taken   : 5 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testJwtResponse" classname="com.bookstore.dto.DTOTest" time="0.005">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testJwtResponse
+Class        : com.bookstore.dto.DTOTest
+TEST PASSED  : testJwtResponse
+Time Taken   : 31 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginRequest" classname="com.bookstore.dto.DTOTest" time="0.008">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLoginRequest
+Class        : com.bookstore.dto.DTOTest
+TEST PASSED  : testLoginRequest
+Time Taken   : 3 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testMessageResponse" classname="com.bookstore.dto.DTOTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testMessageResponse
+Class        : com.bookstore.dto.DTOTest
+TEST PASSED  : testMessageResponse
+Time Taken   : 8 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testResetPasswordRequest" classname="com.bookstore.dto.DTOTest" time="0.017">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testResetPasswordRequest
+Class        : com.bookstore.dto.DTOTest
+TEST PASSED  : testResetPasswordRequest
+Time Taken   : 16 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testSignupRequest" classname="com.bookstore.dto.DTOTest" time="0.014">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSignupRequest
+Class        : com.bookstore.dto.DTOTest
+TEST PASSED  : testSignupRequest
+Time Taken   : 5 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthorities" classname="com.bookstore.security.UserDetailsImplTest" time="0.013">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAuthorities
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testAuthorities
+Time Taken   : 8 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testBuildFromUser" classname="com.bookstore.security.UserDetailsImplTest" time="0.007">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testBuildFromUser
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testBuildFromUser
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testEqualsWithDifferentId" classname="com.bookstore.security.UserDetailsImplTest" time="0.002">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testEqualsWithDifferentId
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testEqualsWithDifferentId
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testEqualsWithSameId" classname="com.bookstore.security.UserDetailsImplTest" time="0.008">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testEqualsWithSameId
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testEqualsWithSameId
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testIsEnabled" classname="com.bookstore.security.UserDetailsImplTest" time="0.002">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testIsEnabled
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testIsEnabled
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testMultipleRoles" classname="com.bookstore.security.UserDetailsImplTest" time="0.003">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testMultipleRoles
+Class        : com.bookstore.security.UserDetailsImplTest
+TEST PASSED  : testMultipleRoles
+Time Taken   : 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="setUp[edge](0)" classname="com.bookstore.selenium.SeleniumTest" time="5.734">
+    <failure message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net" type="io.github.bonigarcia.wdm.config.WebDriverManagerException"><![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1421)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at com.bookstore.selenium.SeleniumTest.setUp(SeleniumTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	... 23 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+	... 27 more
+]]></failure>
+    <system-out><![CDATA[========================================
+TEST GROUP FINISHED: Unit Tests
+Passed  : 35
+Failed  : 0
+Skipped : 0
+End Time: Thu Jun 11 08:25:29 IST 2026
+========================================
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-06-11T08:25:30.952+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.BookControllerTest        : Starting BookControllerTest using Java 21 with PID 27500 (C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\test-classes started by 2485062 in C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend)
+2026-06-11T08:25:30.955+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.BookControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T08:25:30.997+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@b86d554
+2026-06-11T08:25:34.854+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.b.wdm.versions.VersionDetector       : Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_149_WINDOWS to get latest version of msedgedriver (No such host is known (msedgedriver.azureedge.net))
+2026-06-11T08:25:34.908+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.b.wdm.versions.VersionDetector       : Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-06-11T08:25:34.929+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.b.wdm.versions.VersionDetector       : Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-06-11T08:25:35.025+05:30  INFO 27500 --- [ TestNG-tests-5] i.g.bonigarcia.wdm.WebDriverManager      : Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2026-06-11T08:25:35.134+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.bonigarcia.wdm.WebDriverManager      : There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2026-06-11T08:25:35.226+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.b.wdm.versions.VersionDetector       : Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-06-11T08:25:35.274+05:30  WARN 27500 --- [ TestNG-tests-5] i.g.b.wdm.versions.VersionDetector       : Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-06-11T08:25:35.348+05:30  INFO 27500 --- [ TestNG-tests-5] i.g.bonigarcia.wdm.WebDriverManager      : Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2026-06-11T08:25:35.457+05:30 ERROR 27500 --- [ TestNG-tests-5] i.g.bonigarcia.wdm.WebDriverManager      : There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427) ~[webdrivermanager-5.9.2.jar:na]
+	at com.bookstore.selenium.SeleniumTest.setUp(SeleniumTest.java:73) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688) ~[na:na]
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55) ~[httpclient5-5.2.3.jar:5.2.3]
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183) ~[httpclient5-5.2.3.jar:5.2.3]
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157) ~[webdrivermanager-5.9.2.jar:na]
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573) ~[webdrivermanager-5.9.2.jar:na]
+	... 27 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\2485062\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testAdminDashboard_AddBook" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdminDashboard_AddBook
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminDashboard_AddBook" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdminDashboard_AddBook
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminDashboard_AddBook" classname="com.bookstore.selenium.SeleniumTest" time="5.39">
+    <system-out><![CDATA[========================================
+TEST GROUP FINISHED: Controller Tests
+Passed  : 17
+Failed  : 0
+Skipped : 0
+End Time: Thu Jun 11 08:26:07 IST 2026
+========================================
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdminDashboard_AddBook
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdminDashboard_Loads
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdmin_SellerDashboardLinkVisible
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCart_IconVisibleInNavbar
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCart_NavigatesToCartPage
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCommunityPage_Loads
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testHomePage_DisplaysBooks
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testHomePage_LoadsSuccessfully
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLoginPage_Loads
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogin_WithValidCredentials
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogin_WithWrongPassword
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogout_RedirectsToHome
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testNavbar_ShowsLoginWhenNotLoggedIn
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testSearch_OpensSearchPopup
+Reason       : io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdminDashboard_AddBook
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdminDashboard_Loads
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testAdmin_SellerDashboardLinkVisible
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCart_IconVisibleInNavbar
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCart_NavigatesToCartPage
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testCommunityPage_Loads
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testHomePage_DisplaysBooks
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testHomePage_LoadsSuccessfully
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLoginPage_Loads
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogin_WithValidCredentials
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogin_WithWrongPassword
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testLogout_RedirectsToHome
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testNavbar_ShowsLoginWhenNotLoggedIn
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="takeScreenshot" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+    <system-out><![CDATA[TEST SKIPPED : testSearch_OpensSearchPopup
+Reason       : Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminDashboard_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdminDashboard_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminDashboard_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdminDashboard_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminDashboard_Loads" classname="com.bookstore.selenium.SeleniumTest" time="8.723">
+    <system-out><![CDATA[TEST PASSED  : testAdminDashboard_AddBook
+Time Taken   : 33545 ms
+Screenshot   : target/screenshots/PASSED_testAdminDashboard_AddBook_20260611_082612.png
+Screenshot saved: target/screenshots/PASSED_chrome_testAdminDashboard_AddBook_20260611_082612.png
+------------------------------------------
+TEST STARTED : testAdminDashboard_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdmin_SellerDashboardLinkVisible" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdmin_SellerDashboardLinkVisible
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdmin_SellerDashboardLinkVisible" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAdmin_SellerDashboardLinkVisible
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testAdmin_SellerDashboardLinkVisible" classname="com.bookstore.selenium.SeleniumTest" time="6.568">
+    <system-out><![CDATA[TEST PASSED  : testAdminDashboard_Loads
+Time Taken   : 8738 ms
+Screenshot   : target/screenshots/PASSED_testAdminDashboard_Loads_20260611_082621.png
+Screenshot saved: target/screenshots/PASSED_chrome_testAdminDashboard_Loads_20260611_082622.png
+------------------------------------------
+TEST STARTED : testAdmin_SellerDashboardLinkVisible
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_IconVisibleInNavbar" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCart_IconVisibleInNavbar
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_IconVisibleInNavbar" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCart_IconVisibleInNavbar
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_IconVisibleInNavbar" classname="com.bookstore.selenium.SeleniumTest" time="0.231">
+    <system-out><![CDATA[TEST PASSED  : testAdmin_SellerDashboardLinkVisible
+Time Taken   : 6576 ms
+Screenshot   : target/screenshots/PASSED_testAdmin_SellerDashboardLinkVisible_20260611_082628.png
+Screenshot saved: target/screenshots/PASSED_chrome_testAdmin_SellerDashboardLinkVisible_20260611_082629.png
+------------------------------------------
+TEST STARTED : testCart_IconVisibleInNavbar
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_NavigatesToCartPage" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCart_NavigatesToCartPage
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_NavigatesToCartPage" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCart_NavigatesToCartPage
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCart_NavigatesToCartPage" classname="com.bookstore.selenium.SeleniumTest" time="0.344">
+    <system-out><![CDATA[TEST PASSED  : testCart_IconVisibleInNavbar
+Time Taken   : 238 ms
+Screenshot   : target/screenshots/PASSED_testCart_IconVisibleInNavbar_20260611_082629.png
+Screenshot saved: target/screenshots/PASSED_chrome_testCart_IconVisibleInNavbar_20260611_082629.png
+------------------------------------------
+TEST STARTED : testCart_NavigatesToCartPage
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCommunityPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCommunityPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCommunityPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testCommunityPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testCommunityPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.16">
+    <system-out><![CDATA[TEST PASSED  : testCart_NavigatesToCartPage
+Time Taken   : 351 ms
+Screenshot   : target/screenshots/PASSED_testCart_NavigatesToCartPage_20260611_082630.png
+Screenshot saved: target/screenshots/PASSED_chrome_testCart_NavigatesToCartPage_20260611_082630.png
+------------------------------------------
+TEST STARTED : testCommunityPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_DisplaysBooks" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testHomePage_DisplaysBooks
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_DisplaysBooks" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testHomePage_DisplaysBooks
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_DisplaysBooks" classname="com.bookstore.selenium.SeleniumTest" time="3.224">
+    <system-out><![CDATA[TEST PASSED  : testCommunityPage_Loads
+Time Taken   : 159 ms
+Screenshot   : target/screenshots/PASSED_testCommunityPage_Loads_20260611_082630.png
+Screenshot saved: target/screenshots/PASSED_chrome_testCommunityPage_Loads_20260611_082630.png
+------------------------------------------
+TEST STARTED : testHomePage_DisplaysBooks
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_LoadsSuccessfully" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testHomePage_LoadsSuccessfully
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_LoadsSuccessfully" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testHomePage_LoadsSuccessfully
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testHomePage_LoadsSuccessfully" classname="com.bookstore.selenium.SeleniumTest" time="0.227">
+    <system-out><![CDATA[TEST PASSED  : testHomePage_DisplaysBooks
+Time Taken   : 3232 ms
+Screenshot   : target/screenshots/PASSED_testHomePage_DisplaysBooks_20260611_082634.png
+Screenshot saved: target/screenshots/PASSED_chrome_testHomePage_DisplaysBooks_20260611_082634.png
+------------------------------------------
+TEST STARTED : testHomePage_LoadsSuccessfully
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLoginPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLoginPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginPage_Loads" classname="com.bookstore.selenium.SeleniumTest" time="0.598">
+    <system-out><![CDATA[TEST PASSED  : testHomePage_LoadsSuccessfully
+Time Taken   : 230 ms
+Screenshot   : target/screenshots/PASSED_testHomePage_LoadsSuccessfully_20260611_082634.png
+Screenshot saved: target/screenshots/PASSED_chrome_testHomePage_LoadsSuccessfully_20260611_082635.png
+------------------------------------------
+TEST STARTED : testLoginPage_Loads
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithValidCredentials" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogin_WithValidCredentials
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithValidCredentials" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogin_WithValidCredentials
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithValidCredentials" classname="com.bookstore.selenium.SeleniumTest" time="6.129">
+    <system-out><![CDATA[TEST PASSED  : testLoginPage_Loads
+Time Taken   : 599 ms
+Screenshot   : target/screenshots/PASSED_testLoginPage_Loads_20260611_082635.png
+Screenshot saved: target/screenshots/PASSED_chrome_testLoginPage_Loads_20260611_082635.png
+------------------------------------------
+TEST STARTED : testLogin_WithValidCredentials
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithWrongPassword" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogin_WithWrongPassword
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithWrongPassword" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogin_WithWrongPassword
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogin_WithWrongPassword" classname="com.bookstore.selenium.SeleniumTest" time="3.93">
+    <system-out><![CDATA[TEST PASSED  : testLogin_WithValidCredentials
+Time Taken   : 6136 ms
+Screenshot   : target/screenshots/PASSED_testLogin_WithValidCredentials_20260611_082642.png
+Screenshot saved: target/screenshots/PASSED_chrome_testLogin_WithValidCredentials_20260611_082642.png
+------------------------------------------
+TEST STARTED : testLogin_WithWrongPassword
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogout_RedirectsToHome" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogout_RedirectsToHome
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogout_RedirectsToHome" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testLogout_RedirectsToHome
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testLogout_RedirectsToHome" classname="com.bookstore.selenium.SeleniumTest" time="6.347">
+    <system-out><![CDATA[TEST PASSED  : testLogin_WithWrongPassword
+Time Taken   : 3942 ms
+Screenshot   : target/screenshots/PASSED_testLogin_WithWrongPassword_20260611_082646.png
+Screenshot saved: target/screenshots/PASSED_chrome_testLogin_WithWrongPassword_20260611_082646.png
+------------------------------------------
+TEST STARTED : testLogout_RedirectsToHome
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testNavbar_ShowsLoginWhenNotLoggedIn" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testNavbar_ShowsLoginWhenNotLoggedIn
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testNavbar_ShowsLoginWhenNotLoggedIn" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testNavbar_ShowsLoginWhenNotLoggedIn
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testNavbar_ShowsLoginWhenNotLoggedIn" classname="com.bookstore.selenium.SeleniumTest" time="1.486">
+    <system-out><![CDATA[TEST PASSED  : testLogout_RedirectsToHome
+Time Taken   : 6347 ms
+Screenshot   : target/screenshots/PASSED_testLogout_RedirectsToHome_20260611_082653.png
+Screenshot saved: target/screenshots/PASSED_chrome_testLogout_RedirectsToHome_20260611_082653.png
+------------------------------------------
+TEST STARTED : testNavbar_ShowsLoginWhenNotLoggedIn
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testSearch_OpensSearchPopup" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSearch_OpensSearchPopup
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testSearch_OpensSearchPopup" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]"/>
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testSearch_OpensSearchPopup
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="testSearch_OpensSearchPopup" classname="com.bookstore.selenium.SeleniumTest" time="0.408">
+    <system-out><![CDATA[TEST PASSED  : testNavbar_ShowsLoginWhenNotLoggedIn
+Time Taken   : 1515 ms
+Screenshot   : target/screenshots/PASSED_testNavbar_ShowsLoginWhenNotLoggedIn_20260611_082654.png
+Screenshot saved: target/screenshots/PASSED_chrome_testNavbar_ShowsLoginWhenNotLoggedIn_20260611_082655.png
+------------------------------------------
+TEST STARTED : testSearch_OpensSearchPopup
+Class        : com.bookstore.selenium.SeleniumTest
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.bookstore.selenium.SeleniumTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp[firefox](0)" classname="com.bookstore.selenium.SeleniumTest" time="10.835">
+    <failure message="Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no &apos;moz:firefoxOptions.binary&apos; capability provided, and no binary flag set on the command line &#10;Host info: host: &apos;LTIN718517&apos;, ip: &apos;10.232.23.177&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'LTIN718517', ip: '10.232.23.177'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:156)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+	at com.bookstore.selenium.SeleniumTest.setUp(SeleniumTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[========================================
+TEST GROUP FINISHED: Selenium Edge Tests
+Passed  : 0
+Failed  : 0
+Skipped : 14
+End Time: Thu Jun 11 08:25:36 IST 2026
+========================================
+2026-06-11T08:25:38.745+05:30  WARN 27500 --- [ TestNG-tests-3] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 148
+2026-06-11T08:25:38.745+05:30  WARN 27500 --- [ TestNG-tests-3] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for 148.0.7778.97. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+------------------------------------------
+TEST STARTED : testAdminDashboard_AddBook
+Class        : com.bookstore.selenium.SeleniumTest
+2026-06-11T08:25:42.980+05:30  INFO 27500 --- [ TestNG-tests-4] i.g.bonigarcia.wdm.WebDriverManager      : Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2026-06-11T08:25:48.235+05:30  INFO 27500 --- [ TestNG-tests-4] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.gecko.driver as C:\Users\2485062\.cache\selenium\geckodriver\win64\0.37.0\geckodriver.exe
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateBook" classname="com.bookstore.controller.BookControllerTest" time="1.646">
+    <system-out><![CDATA[========================================
+TEST GROUP FINISHED: Selenium Firefox Tests
+Passed  : 0
+Failed  : 0
+Skipped : 14
+End Time: Thu Jun 11 08:25:51 IST 2026
+========================================
+2026-06-11T08:25:54.654+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2026-06-11T08:25:56.084+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-06-11T08:25:56.611+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-06-11T08:25:57.041+05:30 DEBUG 27500 --- [ TestNG-tests-2] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-06-11T08:25:58.927+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@586ed600, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32f84640, org.springframework.security.web.context.SecurityContextHolderFilter@165564cb, org.springframework.security.web.header.HeaderWriterFilter@6af549e4, org.springframework.web.filter.CorsFilter@443e1034, org.springframework.security.web.csrf.CsrfFilter@19b16045, org.springframework.security.web.authentication.logout.LogoutFilter@733db5a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f983629, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5e5c572e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4437a21c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@634127ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@890d572, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24268cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a47a24c, org.springframework.security.web.access.ExceptionTranslationFilter@685502fa, org.springframework.security.web.access.intercept.AuthorizationFilter@31c5b180]
+2026-06-11T08:25:59.067+05:30  WARN 27500 --- [ TestNG-tests-2] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 72d71d23-bffe-4a0f-bba2-0901a90838c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-11T08:25:59.374+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-11T08:25:59.374+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-11T08:25:59.382+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2026-06-11T08:25:59.556+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.BookControllerTest        : Started BookControllerTest in 29.844 seconds (process running for 34.441)
+------------------------------------------
+TEST STARTED : testCreateBook
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:00.714+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#createBook(Book, Authentication)
+2026-06-11T08:26:01.174+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.bookstore.model.Book@16a8b24]
+>>> BookController: createBook() called for title: The Great Gatsby
+2026-06-11T08:26:01.294+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:01.294+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.bookstore.model.Book@435967f8]
+TEST PASSED  : testCreateBook
+Time Taken   : 1633 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteBook_NotFound" classname="com.bookstore.controller.BookControllerTest" time="0.084">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testDeleteBook_NotFound
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:01.418+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#deleteBook(String, Authentication)
+>>> BookController: deleteBook() called for id: 999
+2026-06-11T08:26:01.474+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+TEST PASSED  : testDeleteBook_NotFound
+Time Taken   : 77 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllBooks_EmptyList" classname="com.bookstore.controller.BookControllerTest" time="0.414">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetAllBooks_EmptyList
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:01.520+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getAllBooks(String)
+>>> BookController: getAllBooks() called
+>>> BookController: found 0 books
+2026-06-11T08:26:01.536+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:01.537+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+TEST PASSED  : testGetAllBooks_EmptyList
+Time Taken   : 405 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllBooks_ReturnsAllBooks" classname="com.bookstore.controller.BookControllerTest" time="0.103">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetAllBooks_ReturnsAllBooks
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:01.944+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getAllBooks(String)
+>>> BookController: getAllBooks() called
+>>> BookController: found 2 books
+2026-06-11T08:26:01.944+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:01.944+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.bookstore.model.Book@3c8a7511, com.bookstore.model.Book@314e562a]]
+TEST PASSED  : testGetAllBooks_ReturnsAllBooks
+Time Taken   : 50 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllBooks_WithTitleFilter" classname="com.bookstore.controller.BookControllerTest" time="0.072">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetAllBooks_WithTitleFilter
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.056+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getAllBooks(String)
+>>> BookController: getAllBooks() called
+>>> BookController: found 1 books
+2026-06-11T08:26:02.066+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.070+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.bookstore.model.Book@3d110e8c]]
+TEST PASSED  : testGetAllBooks_WithTitleFilter
+Time Taken   : 34 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllCategories" classname="com.bookstore.controller.BookControllerTest" time="0.057">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetAllCategories
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.138+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getAllCategories()
+>>> BookController: getAllCategories() called
+>>> BookController: returning 6 categories
+2026-06-11T08:26:02.153+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.155+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Fiction, Non-Fiction, Science, Technology, Biography, Self-Help]]
+TEST PASSED  : testGetAllCategories
+Time Taken   : 53 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBookById_Found" classname="com.bookstore.controller.BookControllerTest" time="0.076">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetBookById_Found
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.216+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getBookById(String)
+>>> BookController: getBookById() called for id: 1
+2026-06-11T08:26:02.226+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.226+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.bookstore.model.Book@1c5d4464]
+TEST PASSED  : testGetBookById_Found
+Time Taken   : 43 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBookById_NotFound" classname="com.bookstore.controller.BookControllerTest" time="0.138">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetBookById_NotFound
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.288+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getBookById(String)
+>>> BookController: getBookById() called for id: 999
+2026-06-11T08:26:02.305+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.307+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+TEST PASSED  : testGetBookById_NotFound
+Time Taken   : 44 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBooksByCategory" classname="com.bookstore.controller.BookControllerTest" time="0.09">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetBooksByCategory
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.392+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getBooksByCategory(String)
+>>> BookController: getBooksByCategory() called for: Fiction
+>>> BookController: found 1 books for category Fiction
+2026-06-11T08:26:02.408+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.410+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.bookstore.model.Book@3884f40c]]
+TEST PASSED  : testGetBooksByCategory
+Time Taken   : 72 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBooksByCategory_NotFound" classname="com.bookstore.controller.BookControllerTest" time="0.049">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetBooksByCategory_NotFound
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.488+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getBooksByCategory(String)
+>>> BookController: getBooksByCategory() called for: Unknown
+>>> BookController: found 0 books for category Unknown
+2026-06-11T08:26:02.490+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.490+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+TEST PASSED  : testGetBooksByCategory_NotFound
+Time Taken   : 40 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBooksBySeller" classname="com.bookstore.controller.BookControllerTest" time="0.235">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetBooksBySeller
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.547+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#getBooksBySeller(String)
+>>> BookController: getBooksBySeller() called for: seller1
+>>> BookController: found 1 books for seller seller1
+2026-06-11T08:26:02.549+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.556+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.bookstore.model.Book@41e60784]]
+TEST PASSED  : testGetBooksBySeller
+Time Taken   : 34 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateBook_NotFound" classname="com.bookstore.controller.BookControllerTest" time="0.122">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testUpdateBook_NotFound
+Class        : com.bookstore.controller.BookControllerTest
+2026-06-11T08:26:02.628+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.BookController#updateBook(String, Book, Authentication)
+2026-06-11T08:26:02.641+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.bookstore.model.Book@33a7372e]
+>>> BookController: updateBook() called for id: 999
+2026-06-11T08:26:02.662+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:02.672+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+TEST PASSED  : testUpdateBook_NotFound
+Time Taken   : 75 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAddReview" classname="com.bookstore.controller.ReviewControllerTest" time="0.222">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-06-11T08:26:03.157+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.ReviewControllerTest      : Starting ReviewControllerTest using Java 21 with PID 27500 (C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend\target\test-classes started by 2485062 in C:\Users\2485062\Downloads\Virtual-Book-Store-Complete\Virtual-Book-Store-Complete\backend)
+2026-06-11T08:26:03.159+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.ReviewControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T08:26:03.177+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63e31ea
+2026-06-11T08:26:05.670+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-06-11T08:26:05.936+05:30 DEBUG 27500 --- [ TestNG-tests-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-06-11T08:26:06.053+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-06-11T08:26:06.086+05:30 DEBUG 27500 --- [ TestNG-tests-2] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-06-11T08:26:06.370+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3642ee7c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@222ef34, org.springframework.security.web.context.SecurityContextHolderFilter@45395b7d, org.springframework.security.web.header.HeaderWriterFilter@72f8377d, org.springframework.web.filter.CorsFilter@3c25b21a, org.springframework.security.web.csrf.CsrfFilter@b3b0f4e, org.springframework.security.web.authentication.logout.LogoutFilter@712cf292, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@569d049e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3348c36f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@626d9f1f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40b3d4bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@162b6deb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b84fda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@437dac20, org.springframework.security.web.access.ExceptionTranslationFilter@4b6badd1, org.springframework.security.web.access.intercept.AuthorizationFilter@468e4b53]
+2026-06-11T08:26:06.436+05:30  WARN 27500 --- [ TestNG-tests-2] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e6a5834f-6d08-42c7-b70c-4fda60394362
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-11T08:26:06.493+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-11T08:26:06.493+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-11T08:26:06.495+05:30  INFO 27500 --- [ TestNG-tests-2] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-06-11T08:26:06.621+05:30  INFO 27500 --- [ TestNG-tests-2] c.b.controller.ReviewControllerTest      : Started ReviewControllerTest in 3.805 seconds (process running for 41.496)
+------------------------------------------
+TEST STARTED : testAddReview
+Class        : com.bookstore.controller.ReviewControllerTest
+2026-06-11T08:26:06.806+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.ReviewController#addReview(Review)
+2026-06-11T08:26:06.908+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Review(id=rev1, bookId=book1, userId=user1, username=john, rating=5, comment=Excellent book!, create (truncated)...]
+2026-06-11T08:26:06.927+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:06.927+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Review(id=rev1, bookId=book1, userId=user1, username=john, rating=5, comment=Excellent book!, create (truncated)...]
+TEST PASSED  : testAddReview
+Time Taken   : 206 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testAddReview_AsAdmin" classname="com.bookstore.controller.ReviewControllerTest" time="0.12">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testAddReview_AsAdmin
+Class        : com.bookstore.controller.ReviewControllerTest
+2026-06-11T08:26:07.002+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.ReviewController#addReview(Review)
+2026-06-11T08:26:07.003+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Review(id=rev2, bookId=book1, userId=user2, username=jane, rating=4, comment=Great read!, createdAt= (truncated)...]
+2026-06-11T08:26:07.010+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:07.010+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Review(id=rev2, bookId=book1, userId=user2, username=jane, rating=4, comment=Great read!, createdAt= (truncated)...]
+TEST PASSED  : testAddReview_AsAdmin
+Time Taken   : 32 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetReviewsByBook" classname="com.bookstore.controller.ReviewControllerTest" time="0.112">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetReviewsByBook
+Class        : com.bookstore.controller.ReviewControllerTest
+2026-06-11T08:26:07.060+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.ReviewController#getReviewsByBook(String)
+2026-06-11T08:26:07.072+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:07.072+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Review(id=rev1, bookId=book1, userId=user1, username=john, rating=5, comment=Excellent book!, creat (truncated)...]
+TEST PASSED  : testGetReviewsByBook
+Time Taken   : 57 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetReviewsByBook_EmptyList" classname="com.bookstore.controller.ReviewControllerTest" time="0.12">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetReviewsByBook_EmptyList
+Class        : com.bookstore.controller.ReviewControllerTest
+2026-06-11T08:26:07.170+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.ReviewController#getReviewsByBook(String)
+2026-06-11T08:26:07.170+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:07.170+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+TEST PASSED  : testGetReviewsByBook_EmptyList
+Time Taken   : 33 ms
+]]></system-out>
+  </testcase>
+  <testcase name="testGetReviewsByBook_SingleReview" classname="com.bookstore.controller.ReviewControllerTest" time="0.079">
+    <system-out><![CDATA[------------------------------------------
+TEST STARTED : testGetReviewsByBook_SingleReview
+Class        : com.bookstore.controller.ReviewControllerTest
+2026-06-11T08:26:07.256+05:30 DEBUG 27500 --- [ TestNG-tests-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.bookstore.controller.ReviewController#getReviewsByBook(String)
+2026-06-11T08:26:07.256+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-06-11T08:26:07.265+05:30 DEBUG 27500 --- [ TestNG-tests-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Review(id=rev1, bookId=book1, userId=user1, username=john, rating=5, comment=Excellent book!, creat (truncated)...]
+TEST PASSED  : testGetReviewsByBook_SingleReview
+Time Taken   : 45 ms
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Unit Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Unit Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 11 08:25:29 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (343 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bookstore.model.OrderModelTest.testOrderItems()'><b>testOrderItems</b><br>Test class: com.bookstore.model.OrderModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.OrderModelTest@552518c3</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testBuildFromUser()'><b>testBuildFromUser</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testSetRoles()'><b>testSetRoles</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.BookModelTest.testDefaultConstructor()'><b>testDefaultConstructor</b><br>Test class: com.bookstore.model.BookModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.BookModelTest@7de0c6ae</td></tr>
+<tr>
+<td title='com.bookstore.model.OrderModelTest.testOrderFields()'><b>testOrderFields</b><br>Test class: com.bookstore.model.OrderModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.OrderModelTest@552518c3</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testAddRole()'><b>testAddRole</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.PasswordResetTokenModelTest.testConstructorFields()'><b>testConstructorFields</b><br>Test class: com.bookstore.model.PasswordResetTokenModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.PasswordResetTokenModelTest@363f6148</td></tr>
+<tr>
+<td title='com.bookstore.dto.DTOTest.testLoginRequest()'><b>testLoginRequest</b><br>Test class: com.bookstore.dto.DTOTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.dto.DTOTest@4b21844c</td></tr>
+<tr>
+<td title='com.bookstore.model.BookModelTest.testIsbn()'><b>testIsbn</b><br>Test class: com.bookstore.model.BookModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.BookModelTest@7de0c6ae</td></tr>
+<tr>
+<td title='com.bookstore.dto.DTOTest.testSignupRequest()'><b>testSignupRequest</b><br>Test class: com.bookstore.dto.DTOTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.dto.DTOTest@4b21844c</td></tr>
+<tr>
+<td title='com.bookstore.dto.DTOTest.testJwtResponse()'><b>testJwtResponse</b><br>Test class: com.bookstore.dto.DTOTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.dto.DTOTest@4b21844c</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testAuthorities()'><b>testAuthorities</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testMultipleRoles()'><b>testMultipleRoles</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.model.CommunityPostModelTest.testPostFields()'><b>testPostFields</b><br>Test class: com.bookstore.model.CommunityPostModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.CommunityPostModelTest@59aa20b3</td></tr>
+<tr>
+<td title='com.bookstore.model.ReviewModelTest.testCreatedAtSetOnConstruction()'><b>testCreatedAtSetOnConstruction</b><br>Test class: com.bookstore.model.ReviewModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.ReviewModelTest@1a69561c</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testAllArgsConstructor()'><b>testAllArgsConstructor</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.OrderModelTest.testOrderItemFields()'><b>testOrderItemFields</b><br>Test class: com.bookstore.model.OrderModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.OrderModelTest@552518c3</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testIsEnabled()'><b>testIsEnabled</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.model.BookModelTest.testSettersAndGetters()'><b>testSettersAndGetters</b><br>Test class: com.bookstore.model.BookModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.BookModelTest@7de0c6ae</td></tr>
+<tr>
+<td title='com.bookstore.dto.DTOTest.testResetPasswordRequest()'><b>testResetPasswordRequest</b><br>Test class: com.bookstore.dto.DTOTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.dto.DTOTest@4b21844c</td></tr>
+<tr>
+<td title='com.bookstore.model.PasswordResetTokenModelTest.testExpiryDateInFuture()'><b>testExpiryDateInFuture</b><br>Test class: com.bookstore.model.PasswordResetTokenModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.PasswordResetTokenModelTest@363f6148</td></tr>
+<tr>
+<td title='com.bookstore.model.OrderModelTest.testStatusUpdate()'><b>testStatusUpdate</b><br>Test class: com.bookstore.model.OrderModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.OrderModelTest@552518c3</td></tr>
+<tr>
+<td title='com.bookstore.model.CommunityPostModelTest.testCreatedAtOnConstruction()'><b>testCreatedAtOnConstruction</b><br>Test class: com.bookstore.model.CommunityPostModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.CommunityPostModelTest@59aa20b3</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testMultipleRoles()'><b>testMultipleRoles</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.PasswordResetTokenModelTest.testSetUserId()'><b>testSetUserId</b><br>Test class: com.bookstore.model.PasswordResetTokenModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.PasswordResetTokenModelTest@363f6148</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testEqualsWithDifferentId()'><b>testEqualsWithDifferentId</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.security.UserDetailsImplTest.testEqualsWithSameId()'><b>testEqualsWithSameId</b><br>Test class: com.bookstore.security.UserDetailsImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.security.UserDetailsImplTest@1b28f282</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testAddFavorite()'><b>testAddFavorite</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.CommunityPostModelTest.testUpdateTitle()'><b>testUpdateTitle</b><br>Test class: com.bookstore.model.CommunityPostModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.CommunityPostModelTest@59aa20b3</td></tr>
+<tr>
+<td title='com.bookstore.model.UserModelTest.testUserFields()'><b>testUserFields</b><br>Test class: com.bookstore.model.UserModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.UserModelTest@25f9407e</td></tr>
+<tr>
+<td title='com.bookstore.model.ReviewModelTest.testRatingRange()'><b>testRatingRange</b><br>Test class: com.bookstore.model.ReviewModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.ReviewModelTest@1a69561c</td></tr>
+<tr>
+<td title='com.bookstore.model.ReviewModelTest.testReviewFields()'><b>testReviewFields</b><br>Test class: com.bookstore.model.ReviewModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.ReviewModelTest@1a69561c</td></tr>
+<tr>
+<td title='com.bookstore.dto.DTOTest.testMessageResponse()'><b>testMessageResponse</b><br>Test class: com.bookstore.dto.DTOTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.dto.DTOTest@4b21844c</td></tr>
+<tr>
+<td title='com.bookstore.model.BookModelTest.testBookConstructor()'><b>testBookConstructor</b><br>Test class: com.bookstore.model.BookModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.BookModelTest@7de0c6ae</td></tr>
+<tr>
+<td title='com.bookstore.model.OrderModelTest.testTotalAmountCalculation()'><b>testTotalAmountCalculation</b><br>Test class: com.bookstore.model.OrderModelTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.model.OrderModelTest@552518c3</td></tr>
+</table><p>
+</body>
+</html>

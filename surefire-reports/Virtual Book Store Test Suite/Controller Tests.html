@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  Controller Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Controller Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 11 08:25:29 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37951 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testDeleteBook_NotFound()'><b>testDeleteBook_NotFound</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetAllBooks_WithTitleFilter()'><b>testGetAllBooks_WithTitleFilter</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetBooksBySeller()'><b>testGetBooksBySeller</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.ReviewControllerTest.testGetReviewsByBook_SingleReview()'><b>testGetReviewsByBook_SingleReview</b><br>Test class: com.bookstore.controller.ReviewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.ReviewControllerTest@94e51e8</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetAllCategories()'><b>testGetAllCategories</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testCreateBook()'><b>testCreateBook</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>1</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetBooksByCategory()'><b>testGetBooksByCategory</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testUpdateBook_NotFound()'><b>testUpdateBook_NotFound</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetBookById_Found()'><b>testGetBookById_Found</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.ReviewControllerTest.testGetReviewsByBook()'><b>testGetReviewsByBook</b><br>Test class: com.bookstore.controller.ReviewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.ReviewControllerTest@94e51e8</td></tr>
+<tr>
+<td title='com.bookstore.controller.ReviewControllerTest.testAddReview()'><b>testAddReview</b><br>Test class: com.bookstore.controller.ReviewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.ReviewControllerTest@94e51e8</td></tr>
+<tr>
+<td title='com.bookstore.controller.ReviewControllerTest.testGetReviewsByBook_EmptyList()'><b>testGetReviewsByBook_EmptyList</b><br>Test class: com.bookstore.controller.ReviewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.ReviewControllerTest@94e51e8</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetAllBooks_EmptyList()'><b>testGetAllBooks_EmptyList</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetBookById_NotFound()'><b>testGetBookById_NotFound</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetBooksByCategory_NotFound()'><b>testGetBooksByCategory_NotFound</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.BookControllerTest.testGetAllBooks_ReturnsAllBooks()'><b>testGetAllBooks_ReturnsAllBooks</b><br>Test class: com.bookstore.controller.BookControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.BookControllerTest@31dfc6f5</td></tr>
+<tr>
+<td title='com.bookstore.controller.ReviewControllerTest.testAddReview_AsAdmin()'><b>testAddReview_AsAdmin</b><br>Test class: com.bookstore.controller.ReviewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>com.bookstore.controller.ReviewControllerTest@94e51e8</td></tr>
+</table><p>
+</body>
+</html>
